@@ -4,57 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ask-AMU Togo - Virtual Assistant for Universal Health Coverage</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
+    <title>Ask-AMU Togo</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <style>
-        /* Basic styles for the page - replace or remove if using an external stylesheet */
         body {
             font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f4;
         }
 
         header {
-            background: #4CAF50;
+            background-color: #004080;
             color: #fff;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
 
-        nav {
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .social-media {
             display: flex;
             justify-content: center;
-            background: #333;
-            padding: 10px;
+            margin: 20px 0;
         }
 
-        nav a {
-            color: #fff;
-            padding: 14px 20px;
+        .social-media a {
+            margin: 0 10px;
             text-decoration: none;
-            text-align: center;
+            color: #004080;
         }
 
-        nav a:hover {
-            background-color: #575757;
+        .social-media img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
         }
 
-        main {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
+        .social-media img:hover {
+            transform: scale(1.1);
         }
 
         footer {
-            background: #333;
+            background-color: #004080;
             color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: 10px 0;
             position: fixed;
-            width: 100%;
             bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -62,40 +79,20 @@
 <body>
     <header>
         <h1>Welcome to Ask-AMU Togo</h1>
-        <p>Ask-AMU is a virtual assistant available on major social media platforms such as WhatsApp (available), Facebook (in progress), and TikTok (in progress). It is specifically designed to communicate, educate, inform, and facilitate the active participation of the population in Universal Health Coverage (Assurance Maladie Universelle) in Togo. This conversational agent helps users to identify their health insurance plan, determine the associated managing organization, and clearly understand their financial contribution.</p>
+        <p>Ask-AMU is a virtual assistant available on major social media platforms such as WhatsApp, Facebook, and TikTok. It is designed to educate, inform, and facilitate the active participation of the population in Universal Health Coverage (Assurance Maladie Universelle) in Togo. This conversational agent helps users identify their health insurance plan, determine the associated managing organization, and clearly understand their financial contribution.</p>
     </header>
 
-    <nav>
-        <a href="#features">Features</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <main>
-        <section id="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Identify your health insurance plan</li>
-                <li>Understand your financial contribution</li>
-                <li>Access via WhatsApp, Facebook, and TikTok</li>
-                <li>Support for Universal Health Coverage</li>
-            </ul>
-        </section>
-
-        <section id="about">
-            <h2>About Ask-AMU</h2>
-            <p>Ask-AMU Togo is a revolutionary tool designed to enhance public awareness and engagement in the Universal Health Coverage program in Togo. By leveraging popular social media platforms, Ask-AMU provides easy access to essential health insurance information, empowering citizens to make informed decisions about their healthcare.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>For more information or support, feel free to reach out:</p>
-            <ul>
-                <li>Email: <a href="mailto:info@askamu.tg">info@askamu.tg</a></li>
-                <li>Phone: +228 1234 5678</li>
-            </ul>
-        </section>
-    </main>
+    <div class="social-media">
+        <a href="https://wa.me/YourWhatsAppLink" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+        <a href="https://t.me/YourTelegramLink" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+        </a>
+        <a href="https://www.tiktok.com/@YourTikTokLink" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok">
+        </a>
+    </div>
 
     <footer>
         <p>&copy; 2024 Ask-AMU Togo. All rights reserved.</p>
