@@ -55,18 +55,45 @@
             transform: scale(1.1);
             transition: transform 0.2s;
         }
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+        footer a {
+            color: #4CAF50;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .language-selection {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .language-selection select {
+            font-size: 16px;
+            padding: 5px;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
+        <div class="language-selection">
+            <select onchange="location = this.value;">
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+            </select>
+        </div>
         <h1>Meet Ask-AMU</h1>
-        <h1>Your AI-Powered Assistant for Togo's Universal Health Coverage</h1>
+        <h2>Your AI-Powered Assistant for Togo's Universal Health Coverage</h2>
     </header>
 
     <section class="section">
         <p style="font-size: 20px; line-height: 1.6;">
-           Ask-AMU is here to guide you on popular social media platforms <strong>WhatsApp</strong>, <strong>Telegram</strong>, and <strong>TikTok</strong>
+           Ask-AMU is here to guide you on popular social media platforms like <strong>WhatsApp</strong>, <strong>Telegram</strong>, and <strong>TikTok</strong>.
         </p>
         <div class="social-icons">
             <a href="https://wa.me/YourWhatsAppLink" target="_blank">
@@ -92,16 +119,24 @@
     <section class="section">
         <p style="font-size: 20px; line-height: 1.6;">
            Whether you're figuring out your health insurance plan, identifying your managing organization, understanding your financial contribution,
-           or registrating for a plan, Ask-AMU simplifies it all
+           or registering for a plan, Ask-AMU simplifies it all.
         </p>
         <img src="organisme_de_gestion.png" alt="CNSS INAM Logo" style="width: 300px; height: auto; margin: 20px 0;">
     </section>
 
     <section class="section">
         <p style="font-size: 20px; line-height: 1.6;">
-           Ask-AMU is a decision-making dashbord, with tools to visualize key performance indicators through easy-to-understand charts and data, helping decision-makers manage the AMU program more effectively
+           Ask-AMU provides a decision-making dashboard with tools to visualize key performance indicators through easy-to-understand charts and data,
+           helping decision-makers manage the AMU program more effectively.
         </p>
-        <img src="analysis.png" alt="tableau de bord" style="width: 300px; height: auto; margin: 20px 0;">
+        <img src="analysis.png" alt="Tableau de bord" style="width: 300px; height: auto; margin: 20px 0;">
     </section>
+
+    <footer>
+        <p>&copy; 2024 Ask-AMU Togo. All rights reserved.</p>
+        <a href="contact.html">Contact Us</a>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="partner.html">Partner with Us</a>
+    </footer>
 </body>
 </html>
