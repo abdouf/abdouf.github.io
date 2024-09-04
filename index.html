@@ -20,6 +20,10 @@
             background-color: #4CAF50;
             color: white;
         }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
         .section {
             padding: 50px;
             display: flex;
@@ -67,6 +71,19 @@
             text-decoration: none;
             font-size: 16px;
         }
+        .partner-logos {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .partner-logos img {
+            width: 80px;
+            height: auto;
+            transition: transform 0.2s;
+        }
+        .partner-logos img:hover {
+            transform: scale(1.1);
+        }
         .language-selection {
             position: absolute;
             top: 20px;
@@ -90,7 +107,22 @@
         <h1>Meet Ask-AMU</h1>
         <h2>Your AI-Powered Assistant for Togo's Universal Health Coverage</h2>
     </header>
-
+    <!-- Our Partners Section in the Header -->
+    <div style="background-color: #f0f0f0; padding: 10px 20px;">
+        <h2 style="text-align: center; font-size: 24px; margin-bottom: 10px;">BUILT WITH RAFIKI</h2>
+        <div class="partner-logos" style="display: flex; justify-content: center; gap: 20px;">
+            <a href="https://paneo.tech/index.php/about" target="_blank">
+                <img src="logo-rafiki.png" alt="Partner 1" style="width: 100px; height: auto;">
+            </a>
+        </div>
+        <h2 style="text-align: center; font-size: 24px; margin-bottom: 10px;">BUILT BY DATAKLIN</h2>
+        <div class="partner-logos" style="display: flex; justify-content: center; gap: 20px;">
+            <a href="https://paneo.tech/index.php/about" target="_blank">
+                <img src="dataklin_logo.png" alt="Partner 1" style="width: 100px; height: auto;">
+            </a>
+        </div>
+    </div>
+    
     <section class="section">
         <p style="font-size: 20px; line-height: 1.6;">
            Ask-AMU is here to guide you on popular social media platforms like <strong>WhatsApp</strong>, <strong>Telegram</strong>, and <strong>TikTok</strong>.
@@ -136,7 +168,7 @@
         <p>&copy; 2024 DataKlin Consulting. All rights reserved.</p>
         <a href="contact.html">Contact Us</a>
         <a href="terms.html">Terms and Conditions</a>
-        <a href="partner.html">Partner with Us</a>
+        <a href="partner.html">Our Partners</a>
     </footer>
 </body>
 </html>
